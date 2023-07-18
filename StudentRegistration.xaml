@@ -1,0 +1,156 @@
+﻿<Window x:Class="Group_project.StudentRegistration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group_project"
+        mc:Ignorable="d"
+        Title="StudentRegistration" Height="450" Width="800">
+    <Window.DataContext>
+        <local:StudentRegistrationVM>
+
+        </local:StudentRegistrationVM>
+    </Window.DataContext>
+
+    <Grid>
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/macos-purple-abstract-background-hd-wallpaper-1920x1080-77.jpg"/>
+            </StackPanel.Background>
+            <TextBox HorizontalAlignment="Left" Margin="275,15,0,29.8" TextWrapping="Wrap" Text="Add Student Details" VerticalAlignment="Top" Width="262" FontSize="28" FontWeight="Bold" FontFamily="Impact" RenderTransformOrigin="0.495,0.508" Height="37" BorderBrush="{x:Null}">
+                <TextBox.Foreground>
+                    <SolidColorBrush Color="#FF090000" Opacity="0.8"/>
+                </TextBox.Foreground>
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FFD6D6D6" Opacity="0"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBlock Text="Name" TextAlignment="Center" Margin="0,-15,0,10" FontFamily="Segoe UI Black" Foreground="#FF030C09" FontWeight="Bold"/>
+            <TextBox Text="{Binding Name}" TextAlignment="Center" Width="412" Margin="0,0,0,15" BorderBrush="#FFBD2959" Foreground="#FFE9D5D5" >
+                <TextBox.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.5"/>
+                </TextBox.Background>
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TextBox">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1.5" CornerRadius="10">
+                                        <ScrollViewer x:Name="PART_ContentHost" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+
+            <TextBlock Text="Department" TextAlignment="Center" Margin="0,0,0,10" FontFamily="Segoe UI Black" FontWeight="Bold"/>
+            <TextBox Text="{Binding Department}" TextAlignment="Center" Width="410" Margin="0,0,0,15" BorderBrush="#FF701223">
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF170606" Opacity="0.5"/>
+                </TextBox.Background>
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TextBox">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1.5" CornerRadius="10">
+                                        <ScrollViewer x:Name="PART_ContentHost" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <TextBlock Text="Analog Electronics" TextAlignment="Center" Margin="0,0,0,10" FontFamily="Segoe UI Black" FontWeight="Bold"/>
+            <TextBox Text="{Binding Marks1}" TextAlignment="Center" Margin="0,0,0,15" Width="407" BorderBrush="#FF720E2B">
+                <TextBox.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.5"/>
+                </TextBox.Background>
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TextBox">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1.5" CornerRadius="10">
+                                        <ScrollViewer x:Name="PART_ContentHost" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <TextBlock Text="GUI Programing" TextAlignment="Center" Margin="0,0,0,10" FontFamily="Segoe UI Black"/>
+            <TextBox Text="{Binding Marks2}" TextAlignment="Center" Margin="0,0,0,15" Width="406" BorderBrush="#FF620B21">
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF170303" Opacity="0.5"/>
+                </TextBox.Background>
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TextBox">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                        <ScrollViewer x:Name="PART_ContentHost" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <TextBlock Text="Data Structures" TextAlignment="Center" Margin="0,0,0,10" FontFamily="Segoe UI Black" FontWeight="Bold"/>
+            <TextBox Text="{Binding Marks3}" TextAlignment="Center" Margin="0,0,0,40" Width="401" BorderBrush="#FF58081F">
+                <TextBox.Background>
+                    <SolidColorBrush Color="#FF0B0101" Opacity="0.5"/>
+                </TextBox.Background>
+                <TextBox.Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TextBox">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1.5" CornerRadius="10">
+                                        <ScrollViewer x:Name="PART_ContentHost" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TextBox.Style>
+            </TextBox>
+            <Button Content="Save" Height="22" Width="116" 
+            Command="{Binding SaveStudentCommand}" BorderThickness="1.5" BorderBrush="#FFE4F014" Foreground="White" FontSize="16" FontWeight="Bold" FontFamily="Agency FB" Padding="100,10,200,1">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="ButtonBorder" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="ButtonBorder" Property="Background" Value="purple"/>
+
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter TargetName="ButtonBorder" Property="Background" Value="#FF7B68EE"/>
+
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <SolidColorBrush Color="#FF1B1056" Opacity="0.8"/>
+                </Button.Background>
+
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

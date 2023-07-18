@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="admin.jpg" />
+    <None Remove="macos-purple-abstract-background-hd-wallpaper-1920x1080-77.jpg" />
+    <None Remove="ultravoilet-holo-wallpaper-3440x1440_15.jpg" />
+    <None Remove="v1016-c-08_1-ksh6mza3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="admin.jpg" />
+    <Resource Include="macos-purple-abstract-background-hd-wallpaper-1920x1080-77.jpg" />
+    <Resource Include="ultravoilet-holo-wallpaper-3440x1440_15.jpg" />
+    <Resource Include="v1016-c-08_1-ksh6mza3.png" />
+  </ItemGroup>
+
+</Project>
