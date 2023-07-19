@@ -1,0 +1,6 @@
+C:\Users\Jayaweera\Downloads\Group_project\Group_Project.Tests\bin\Debug\net7.0-windows\CoverletSourceRootsMapping
+C:\Users\Jayaweera\Downloads\Group_project\Group_Project.Tests\obj\Debug\net7.0-windows\Group_Project.Tests.csproj.AssemblyReference.cache
+C:\Users\Jayaweera\Downloads\Group_project\Group_Project.Tests\obj\Debug\net7.0-windows\Group_Project.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jayaweera\Downloads\Group_project\Group_Project.Tests\obj\Debug\net7.0-windows\Group_Project.Tests.AssemblyInfoInputs.cache
+C:\Users\Jayaweera\Downloads\Group_project\Group_Project.Tests\obj\Debug\net7.0-windows\Group_Project.Tests.AssemblyInfo.cs
+C:\Users\Jayaweera\Downloads\Group_project\Group_Project.Tests\obj\Debug\net7.0-windows\Group_Project.Tests.csproj.CoreCompileInputs.cache
